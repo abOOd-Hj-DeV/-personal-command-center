@@ -1,0 +1,19 @@
+maintenance: |
+  npm install
+knowledge:
+  - name: build
+    contents: |
+      npm run build
+  - name: typecheck
+    contents: |
+      npm run typecheck
+  - name: test
+    contents: |
+      npm test
+  - name: startup
+    contents: |
+      npm run dev            # dev server, port 5173
+      npm run preview        # serves the production build on port 4173
+  - name: notes
+    contents: |
+      Vite + React SPA, offline-first (IndexedDB/Dexie), no backend. npm only. vercel.json deploys as static SPA.
