@@ -104,6 +104,7 @@ export default function Settings() {
                 inputMode="numeric"
                 min={0}
                 className="!w-24 !h-8 text-center"
+                key={`${c.id}:${prefs.weeklyTargets[c.id] ?? c.targetMinutesPerWeek ?? 0}`}
                 defaultValue={prefs.weeklyTargets[c.id] ?? c.targetMinutesPerWeek ?? 0}
                 onBlur={(e) => {
                   const v = parseInt(e.target.value) || 0

@@ -58,7 +58,7 @@ export default function Day() {
       kind: minutes ? 'time' : 'task',
       minutes,
       note: note || undefined,
-      completed: !!minutes || true,
+      completed: !!minutes,
     })
     // auto-suggest classification when user hasn't manually set one
     if (rec?.classificationSource !== 'manual') {

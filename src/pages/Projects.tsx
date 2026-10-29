@@ -170,11 +170,13 @@ export default function Projects() {
                 </div>
                 <Input
                   placeholder={t('nextAction')}
+                  key={`next-${p.id}-${p.nextAction ?? ''}`}
                   defaultValue={p.nextAction ?? ''}
                   onBlur={(e) => updateProject(p.id, { nextAction: e.target.value })}
                 />
                 <Textarea
                   placeholder={t('notes')}
+                  key={`notes-${p.id}-${p.notes ?? ''}`}
                   defaultValue={p.notes ?? ''}
                   onBlur={(e) => updateProject(p.id, { notes: e.target.value })}
                 />
